@@ -4,19 +4,31 @@
       "title": "My new website",
       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, expedita doloribus neque enim optio esse alias quisquam distinctio, recusandae animi ducimus quis vero minus qui rem consectetur fuga nostrum similique!",
       "author": "Petq",
-      "id": 1
+      "id": "1"
     },
     {
       "title": "Welcome party!",
       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, expedita doloribus neque enim optio esse alias quisquam distinctio, recusandae animi ducimus quis vero minus qui rem consectetur fuga nostrum similique!",
       "author": "Ivo",
-      "id": 2
+      "id": "2"
     },
     {
       "title": "Web dev top tips",
       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, expedita doloribus neque enim optio esse alias quisquam distinctio, recusandae animi ducimus quis vero minus qui rem consectetur fuga nostrum similique!",
       "author": "Petq",
-      "id": 3
+      "id": "3"
+    },
+    {
+      "id": "5f22",
+      "title": "weekend",
+      "body": "vxcvcvxcvcxvcxssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss",
+      "author": "Petq"
+    },
+    {
+      "id": "b6e6",
+      "title": "Hello again!",
+      "body": "dfvl,lfdm,bl;;;;;skkkddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "author": "Ivo"
     }
   ]
 }

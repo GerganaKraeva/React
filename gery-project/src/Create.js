@@ -1,15 +1,30 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Create = () => {
     const [title, setTitle] = useState("");
     const [body, setBody] = useState("");
     const [author, setAuthor] = useState("Petq");
+    const [isPending, setIsPending] = useState(false);
+    const navigate = useNavigate();
 
     const handleSumbit = (e) => {
         e.preventDefault();
         const blog = { title, body, author };
-        console.log(blog);
-        
+
+        setIsPending(true);
+
+        fetch("http://localhost:8000/blogs", {
+            method: "POST",
+            HEADERS: { "Content-Type": "application/json" },
+            body: JSON.stringify(blog)
+        }).then(() => {
+            console.log("new blog added");
+            setIsPending(false);
+        })
+        // history.go(-1);
+        navigate("/");
+
     }
 
     return (
@@ -37,7 +52,9 @@ const Create = () => {
                     <option value="Petq">Petq</option>
                     <option value="Ivo">Ivo</option>
                 </select>
-                <button>Add Blog</button>
+                {!isPending && <button>Add Blog</button>}
+                { isPending && <button disabled> Adding blog ...</button>}
+
             </form>
         </div>
     );
